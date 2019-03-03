@@ -37,8 +37,8 @@
         // The current application coordinates were pre-registered in a B2C tenant.
         var applicationConfig = {
             clientID: '07bee65b-ef85-450b-8b76-15490151e66d',
-            authority: "https://testforb2cweiting.b2clogin.com/tfp/testforb2cweiting.onmicrosoft.com/B2C_1_siupin",
-            b2cScopes: ["https://testforb2cweiting.onmicrosoft.com/HelloCoreAPI/demo.read"],
+            authority: "https://testforb2cweiting.b2clogin.com/tfp/testforb2cweiting.onmicrosoft.com/B2C_1_siUpin",
+            b2cScopes: ["https://testforb2cweiting.onmicrosoft.com/api/Hello.read"],
             webApi: 'https://localhost:8080/try',
         };
     </script>
@@ -106,7 +106,7 @@
             //     })
             $.ajax({
                 type:'get',
-                url:'http://10.78.20.35:3000/api/try/',
+                url:'http://localhost:3000/api/error',
                 headers: {
                     'Authorization': 'Bearer ' + accessToken,
                 },
